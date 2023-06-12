@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>FLU VACCINE</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
+  
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Charts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+    <!-- JavaScript Being used -->
+    <script src="../static/js/vaccinechart.js"></script>
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            CDC Flu Data
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="../index.html" target=>HOME</a>
+          <i>|</i>
+          <a href="FluVaccine.html" target=>VACCINE DATA</a>
+          <i>|</i>
+          <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
+          <i>|</i>
+          <a href="vvb.html" target=>VACCINE VS BURDEN DATA</a>
+        </div>
+      </input>
+    </div>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <br><div class = "container">
+      <div class = "row">
+        <div class = "col-md-14">
+          <h1 class="display-4">FLU VACCINE<br> </h1>
+          <br><div class="jumbotron" style="background-color: #ffffff; opacity: 80%;">
+            <p>Below is a line graph representing vaccine doses distributed from 2011 to 2021. It is broken down by weeks, starting during flu season of each year.</p>
+            <p class="chartHeader">Vaccine Data</p>
+            <canvas id="myChart"></canvas>
+              <script src="../static/js/vaccineScatter.js"></script>
+              <hr class="my-4">
+            <p>Each year the CDC estimates that the flu affects 9-41 million people. This can vary widely each season. There are several factor that go into flu infection, 
+              age, population, immunity, and flu variant. The number one suggestion from the CDC in order to protect yourself it is to "Take time to get a flu shoot."</p>
+              <br><br><p class="lead">
+                <a class="btn btn-primary btn-lg" target="_blank" href="https://www.cdc.gov/flu/prevent/prevention.htm" role="button">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>       
+  </body>
+</html>

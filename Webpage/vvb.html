@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <title>FLU: VACCINE vs BURDEN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
+
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Charts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          CDC Flu Data
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="../index.html" target=>HOME</a>
+        <i>|</i>
+        <a href="FluVaccine.html" target=>VACCINE DATA</a>
+        <i>|</i>
+        <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
+        <i>|</i>
+        <a href="vvb.html" target=>VACCINE VS BURDEN DATA</a>
+      </div>
+    </div>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <br><div class = "container">
+      <div class = "row"></div>
+        <div class = "col-md-14"<br>
+          <h1 class="display-4">THE FLU: <br> </h1>
+          <h1 class="display-8">VACCINE VS BURDEN</h1>
+          <br><div class="jumbotron" style="background-color: #ffffff; opacity: 85%;">
+            <p>Flu seasons are unpredictable in a number of ways, including when they begin, how severe they are, how long they last, which viruses will spread, and whether the viruses in the vaccine match flu viruses that are circulating.</p>
+            <br>
+            <p>Below is a mixed chart that compares two data sets over a period of 10 years. The data being represented on the line chart is the total doses distributed. There are mulitple datapoints within a single year showing how it progressed over a series of weeks</p> 
+            <br>
+            <p>The bar chart provides a visual representation of the relationship between the number of symptomatic illnesses (per 100,0000). Together both charts show a relationship between doses given and the burden of symptomatic illnesses from 2011 to 2021. No data for 2020 was registered as there was a Covid pandemic resulting in quarantine, minimizing any flu data.</p>
+            <p class="chartHeader">Vaccine vs Burden</p>
+            <canvas id="myChart"></canvas>
+              <script src="../static/js/vvbchart.js"></script>
+              <hr class="my-4">
+<p>Let's talk about influenza, aka the flu.<br> The flu is a virus that typically occurs in the fall and winter month, October to February, which is also known as the flu season.
+The flu has a myriad of signs and symptoms, and this can vary from person to person flu variation to flu variation. Common signs and symptoms from the flu are:</p>
+<li>Fever* or feeling feverish/chills</li>
+<li>Cough</li>
+<li>Sore throat</li>
+<li>Runny or stuffy nose</li>
+<li>Muscle or body aches</li>
+<li>Headaches</li>
+<li>Fatigue (tiredness)</li>
+<li>Some people may have vomiting and diarrhea, though this is more common in children than adults</li>
+<br><br><p class="lead">
+<a class="btn btn-primary btn-lg" target="_blank" href="https://www.cdc.gov/flu/about/keyfacts.htm" role="button">Learn more</a>
+</p>
+          </div>
+      </div>
+    </div>
+  </body>
+
+</html>

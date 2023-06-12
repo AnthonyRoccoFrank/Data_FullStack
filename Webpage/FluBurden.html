@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FLU BURDEN</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/vvb-style.css">
+    
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Charts.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-header">
+        <div class="nav-title">
+          CDC Flu Data
+        </div>
+      </div>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      
+      <div class="nav-links">
+        <a href="../index.html" target=>HOME</a>
+        <i>|</i>
+        <a href="FluVaccine.html" target=>VACCINE DATA</a>
+        <i>|</i>
+        <a href="FluBurden.html" target=>FLU BURDEN DATA</a>
+        <i>|</i>
+        <a href="vvb.html" target=>VACCINE VS BURDEN DATA</a>
+      </div>
+    </div>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <br><div class = "container">
+      <div class = "row">
+        <div class = "col-md-14"<br>
+          <h1 class="display-4">THE BURDEN <br> </h1>
+          <br><div class="jumbotron" style="background-color: #ffffff; opacity: 80%;">
+            <p class="intro">Below is a bar chart representing the several levels of Flu Burden and their overall effect from 2011 to 2021. The three levels of burden are Symptomatic illnesses, Hospitalizations, and Deaths. All values noted are estimates. No data for 2020 was registered as there was a Covid pandemic resulting in quarantine, minimizing any flu data.</p>
+            <p class="chartHeader">Flu Burden data (in millions)</p>
+            <canvas id="myChart"></canvas>
+              <script src="../static/js/burdenchart.js"></script>
+              <hr class="my-4">
+            <p>The CDC monitors the US yearly for the flu. They monitor to see the number of people that are symptomatic, whos being admitted to the hospital, and how many are dying.
+              The reason behind this is beind to understand the burden that the flu is placing on the US and the hospitals currently, and to be prepared for the future.</p>
+            <a class="btn btn-primary btn-lg" target="_blank" href="https://www.cdc.gov/flu/about/burden/index.html" role="button">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+          
+
+      <!-- <div id="graph"></div>           -->
+  </body>
+</html>
